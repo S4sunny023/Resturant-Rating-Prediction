@@ -3,7 +3,7 @@ from Zomato.logger import logging
 from Zomato.exception import ZomatoException
 from datetime import datetime
 
-FILE_NAME = 'zomato_data.csv'
+FILE_NAME = 'zomato_predict.csv'
 TRAIN_FILE_NAME = 'train.csv'
 TEST_FILE_NAME = 'test.csv'
 TRANSFORMER_OBJECT_FILE_NAME="transformer.pkl"

@@ -66,7 +66,7 @@ class DataValidation:
             missing_columns = []
             for base_column in base_columns:
                 if base_column not in current_columns:
-                    logging.info(f"Column: [{base_column} is not available.]")
+                    logging.info(f"Column: [{base} is not available.]")
                     missing_columns.append(base_column)
             
             if len(missing_columns)>0:
