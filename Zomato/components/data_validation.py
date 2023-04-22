@@ -84,7 +84,7 @@ class DataValidation:
             current_columns = current_df.columns
 
             for base_column in base_columns:
-                base_data,current_data = base_df[base_column],current_df[base_column]
+                base_data,current_data = base_df[base_column].astype(str),current_df[base_column].astype(str)
                 #Null hypothesis is that both column data drawn from same distrubtion
                 
                 logging.info(f"Hypothesis {base_column}: {base_data.dtype}, {current_data.dtype} ")
